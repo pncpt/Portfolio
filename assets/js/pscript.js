@@ -21,11 +21,11 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio ";
-            $("#favicon").attr("href", "/assets/image/namelogo.png");
+            $("#favicon").attr("href", "assets/image/namelogo.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "/assets/image/namelogo.png");
+            $("#favicon").attr("href", "assets/image/namelogo.png");
         }
     });
 
@@ -47,7 +47,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 35rem; margin: 1rem">
-      <img draggable="false" src="/assets/image/project/${project.image}.png" alt="project" />
+      <img draggable="false" src="assets/image/project/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>

@@ -242,7 +242,7 @@
   }
 
     header .typewriter {
-      display:none;
+      font-size: 1rem;
     }
   }
 
@@ -253,7 +253,7 @@
     display: none;
   }
     header h1{
-      display:none;
+      font-size: 1rem;
     }
 
     header .navbar ul li a {
@@ -311,6 +311,8 @@
   }
   .fa-times {
     transform: rotate(180deg);
+    border:2px;
+  border-radius: 2px;
     color: #D00000;
   }
   header .navbar.nav-toggle {
@@ -320,8 +322,17 @@
 
 @media (max-width: 500px) {
   header .myname{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+  header h1{
+    font-size: 0.8rem;
+  }
+  header .name-logo{
+    width: 1.5rem;
+    height: 1.5rem; 
+    margin-top: 2px;
+  }
+
 }
 
 
@@ -1052,7 +1063,7 @@
   .skills {
     background: #E5E4E2;
     position: relative;  
-    gap: 1.5rem;
+    gap: 2rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1061,6 +1072,7 @@
   .skills .skills_container .technical .skills_element{
     width :100%;
     padding-right: 2rem;
+  
   }
   .skills .skills_container .programming .skills_element{
     width :100%;
@@ -1085,11 +1097,25 @@
   }
   .skills h2 {
     font-size: 4rem;
-    padding: 6rem;
+    padding: 5rem;
     color: #0D2C54;
   }
   .skills .heading span {
       color: #D00000;
+  }
+  .technical{
+    background-color: #FEFEFA;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+  .programming{
+    background-color: #FEFEFA;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   .skills_container {
     row-gap: 2rem;
@@ -1103,13 +1129,15 @@
   }  
   .skills_text {
     font-size: 2rem;
-    padding: 6rem;
+    padding: 3rem;
     color: #0D2C54;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    
+    
   }  
   .skills_text span{
     color: #D00000;
@@ -1124,9 +1152,10 @@
     padding:1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     height: 3.5rem;
     background-color:#E5E4E2 ;
-    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+   
     width:50rem;
   }
   .skill_icon {
@@ -1222,7 +1251,7 @@
   .skills {
     background: #FEFEFA;
     position: relative;  
-    gap: 1.5rem;
+    gap: 0rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1253,11 +1282,7 @@
   .skills {
     background: #E5E4E2;
     position: relative;  
-    gap: 1.5rem;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 0rem;
   }
   
   .skills_data {
@@ -1340,6 +1365,14 @@
   }
   .skill_percentage{
     font-size: 0.8rem;
+  }
+  .skills .skills_container .technical .skills_element{
+    width :100%;
+    padding-right: 0rem;
+  }
+  .skills .skills_container .programming .skills_element{
+    width :100%;
+    padding-left: 0rem;
   }
   
 }
